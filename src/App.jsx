@@ -7,6 +7,8 @@ import Navber from './Component/Navber'
 import About from './Component/About'
 import { Typewriter } from "react-simple-typewriter";
 import Education from './Component/Education';
+import Skills from './Component/Skills';
+import Projects from './Component/Projects';
 
 function App() {
   
@@ -16,7 +18,8 @@ function App() {
  <Navber/>
  <About/>
  <Education/> 
-       
+       <Skills/>
+       <Projects/>
     </>
   )
 }

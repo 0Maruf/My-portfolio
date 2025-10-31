@@ -47,7 +47,7 @@ function Navbar() {
         </div>
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-blue-500">Maruf <span className="text-white">Dev</span></h1>
+        <h1 className="text-2xl font-bold text-blue-500 flex gap-1.5">Maruf <span className="text-white hidden md:block">Dev</span></h1>
       </div>
 
       {/* Desktop Menu */}

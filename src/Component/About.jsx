@@ -5,11 +5,11 @@ import facebook from "../../public/Facebook.png";
 import istagram from "../../public/Instagram.png";
 import linkedin from "../../public/Linkedin.png";
 import Email from "../../public/Email.png";          
-import github from "../../public/github.png";          
+import github from "../../public/github.jpg";          
 
 const About = () => {
   return (
-    <section className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-40 px-6 md:px-16">
+    <section className="bg-black  text-white py-40 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-16 md:gap-40 ">
 
         {/* About Text */}
@@ -26,7 +26,7 @@ const About = () => {
                         cursorStyle="|"
                         typeSpeed={300}
                         deleteSpeed={300}
-                    /></span> <br /> <br />I'am <span className="font-bold text-2xl ">MERN STACK (Front-End) Developer.</span>
+                    /></span> <br /> <br /> I’m <span className="font-bold text-2xl ">MERN STACK (Front-End) Developer.</span>
            <br />
             I specialize in creating clean, modern, and functional designs. 
           </p>
@@ -39,7 +39,7 @@ const About = () => {
     <img
       src={github}
       alt="Facebook"
-      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300"
+      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300 rounded-3xl "
     />
   </a>
   <a

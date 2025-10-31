@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-20 px-6 md:px-16"
+      className="bg-black text-white py-20 px-6 md:px-16"
     >
       <div
         className="max-w-6xl mx-auto text-center mb-12"
