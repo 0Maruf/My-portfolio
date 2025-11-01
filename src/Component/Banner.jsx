@@ -80,8 +80,14 @@ const Banner = () => {
 
           </div>
           <div>
-            <button className="btn btn-soft btn-primary">Download Resume</button>
-          </div>
+            <a
+              href="/public/Resume/Maruf Hasan Resume - Google Docs.pdf" // 1. Path to your PDF in the public folder
+              download="Maruf Hasan Resume - Google Docs.pdf" // 2. This attribute forces the download and sets the default filename
+              className="font-semibold text-lg bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition inline-block" // 3. Styling the link to look like a button
+            >
+              Download Resume
+            </a>
+          </div>
 
         </div>
         {/* Hero Image */}

@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -100,10 +101,15 @@ function Navbar() {
           </svg>
         </label>
 
-        {/* Resume Button */}
-        <button className="font-semibold text-lg md:text-xl bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">
+       {/* Resume Link/Button */}
+        <a 
+          href="/public/Resume/Maruf Hasan Resume - Google Docs.pdf" // <- Update the file name here (e.g., /Maruf_Resume.pdf)
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="font-semibold text-lg md:text-xl bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition"
+        >
           Resume
-        </button>
+        </a>
 
         {/* Mobile Menu Icon (only show on mobile) */}
         <button

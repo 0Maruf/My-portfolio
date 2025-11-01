@@ -24,13 +24,15 @@ const About = () => {
                         />
                     </div>
 
-                    <a
-                        href="/resume.pdf" // 🧾 তোমার resume link দাও
-                        download
-                        className="mt-6 btn bg-slate-100  hover:bg-blue-600 hover:text-white  text-blue-600  px-6 py-3 rounded-xl flex items-center gap-2 text-lg font-medium shadow-md transition-transform hover:scale-105"
-                    >
-                        <FaDownload /> Download Resume
-                    </a>
+                    <div> <br />
+            <a
+              href="/public/Resume/Maruf Hasan Resume - Google Docs.pdf" // 1. Path to your PDF in the public folder
+              download="Maruf Hasan Resume - Google Docs.pdf" // 2. This attribute forces the download and sets the default filename
+              className="font-semibold text-lg bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition inline-block" // 3. Styling the link to look like a button
+            >
+              Download Resume
+            </a>
+          </div>
                 </div>
 
                 {/* Right Side - Info */}
