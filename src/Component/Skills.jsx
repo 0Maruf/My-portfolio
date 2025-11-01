@@ -59,54 +59,7 @@ const skills = [
     color: "from-red-500 to-orange-600",
     icon: "/image/git.png",
   },
-  {
-    name: "Microsoft Word",
-    category: "Productivity",
-    description: "Professional documentation and formatting.",
-    level: "95%",
-    color: "from-blue-600 to-sky-400",
-    icon: "/image/word.png",
-  },
-  {
-    name: "Microsoft Excel",
-    category: "Productivity",
-    description: "Data organization, analysis, and formulas.",
-    level: "85%",
-    color: "from-green-500 to-lime-400",
-    icon: "/image/excel.png",
-  },
-  {
-    name: "PowerPoint",
-    category: "Productivity",
-    description: "Presentation design and animations.",
-    level: "90%",
-    color: "from-orange-400 to-red-400",
-    icon: "/image/powerpoint.png",
-  },
-  {
-    name: "Access",
-    category: "Database",
-    description: "Database management and data storage.",
-    level: "80%",
-    color: "from-purple-500 to-indigo-500",
-    icon: "/image/access.jpg",
-  },
-  {
-    name: "Email Writing",
-    category: "Communication",
-    description: "Professional and structured email communication.",
-    level: "95%",
-    color: "from-pink-400 to-rose-500",
-    icon: "/image/gmail.jpg",
-  },
-  {
-    name: "Product Management",
-    category: "Management",
-    description: "Planning, executing, and delivering projects.",
-    level: "80%",
-    color: "from-yellow-400 to-amber-500",
-    icon: "/image/product.jpg",
-  },
+ 
 ];
 
 const Skills = () => {
