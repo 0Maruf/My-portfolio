@@ -1,100 +1,80 @@
-import React from "react";
-import { Typewriter } from "react-simple-typewriter";
-import HeroLogo from "../../public/ResumePicture.png";
-import facebook from "../../public/Facebook.png";
-import istagram from "../../public/Instagram.png";
-import linkedin from "../../public/Linkedin.png";
-import Email from "../../public/Email.png";          
-import github from "../../public/github.jpg";          
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FaDownload, FaUser, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { BsCalendarDate } from "react-icons/bs";
+import { TbFlag3 } from "react-icons/tb";
+import about from "../../public/image/about.jpg"
 
 const About = () => {
-  return (
-    <section className="bg-black  text-white py-40 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-16 md:gap-40 ">
+    useEffect(() => {
+        AOS.init({ duration: 1200, once: true });
+    }, []);
 
-        {/* About Text */}
-        <div className="md:w-[500px] w-full space-y-6 border-l-6 border-white pl-4 " data-aos="fade-right">
-          <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-5xl  inline-block pb-2">
-            Hello...
-          </h1>
+    return (
+        <section id="about" className="bg-[#0a0a1a] text-white py-20 px-6 md:px-16 relative overflow-hidden">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around gap-16">
+                {/* Left Side - Image */}
+                <div className="relative flex flex-col items-center" data-aos="fade-right">
+                    <div className="bg-gradient-to-tr from-cyan-500/40 to-blue-500/10 rounded-full p-2">
+                        <img
+                            src={about}
+                            alt="Md. Maruf Hasan"
+                            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-cyan-500/40"
+                        />
+                    </div>
 
-          <p className="text-md md:text-lg leading-relaxed">
-            I’m <span className="font-bold text-4xl">MD.<Typewriter
-                        words={["MARUF HASAN"]}
-                        loop={Infinity}
-                        cursor
-                        cursorStyle="|"
-                        typeSpeed={300}
-                        deleteSpeed={300}
-                    /></span> <br /> <br /> I’m <span className="font-bold text-2xl ">MERN STACK (Front-End) Developer.</span>
-           <br />
-            I specialize in creating clean, modern, and functional designs. 
-          </p>
-            <div className="flex gap-4 md:gap-6 flex-wrap  items-center mt-6">
-  <a
-    href="https://github.com/0Maruf"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src={github}
-      alt="Facebook"
-      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300 rounded-3xl "
-    />
-  </a>
-  <a
-    href="https://www.facebook.com/lipumarufhasan"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src={facebook}
-      alt="Facebook"
-      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300"
-    />
-  </a>
+                    <a
+                        href="/resume.pdf" // 🧾 তোমার resume link দাও
+                        download
+                        className="mt-6 btn bg-slate-100  hover:bg-blue-600 hover:text-white  text-blue-600  px-6 py-3 rounded-xl flex items-center gap-2 text-lg font-medium shadow-md transition-transform hover:scale-105"
+                    >
+                        <FaDownload /> Download Resume
+                    </a>
+                </div>
 
-  <a
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src={linkedin}
-      alt="LinkedIn"
-      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300"
-    />
-  </a>
+                {/* Right Side - Info */}
+                <div className="md:w-2/3" data-aos="fade-left">
+                    <h2 className="text-4xl text-cyan-400 md:text-5xl font-bold border-l-4 border-white  mb-6">
+                        .ABOUT ME
+                    </h2>
+                    <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Hello! I'm <span className="text-cyan-400 font-semibold">Md. Maruf Hasan</span>.
+                        A passionate <span className="text-cyan-400">Web Designer & Frontend Developer</span> from Bangladesh.
+                        I love creating responsive, modern, and user-friendly web interfaces.
+                        I'm always eager to learn new technologies and improve my craft to turn creative ideas into real products.
+                    </p>
 
-  <a
-    href="marufhasanlipu@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src={Email}
-      alt="Email"
-      className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300"
-    />
-  </a>
- 
-</div>
- <div>
-    <button className="btn btn-soft btn-primary">Download Resume</button>
-  </div>
-        
-        </div>
-          {/* Hero Image */}
-        <div className="flex-shrink-0 " data-aos="fade-left" >
-          <img
-            className="rounded-4xl md:h-[500px] h-[350px] md:w-[426px] w-[350px] shadow-lg border-4 border-white"
-            src={HeroLogo}
-            alt="Md. Maruf Hasan"
-          />
-        </div>
-      </div>
-    </section>
-  );
+                    <div className="space-y-3 text-gray-200">
+                        <p className="flex items-center gap-3">
+                            <FaUser className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Name:</span> Md. Maruf Hasan</span>
+                        </p>
+                        <p className="flex items-center gap-3">
+                            <BsCalendarDate className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Date of Birth:</span> 26-12-2005</span>
+                        </p>
+                        <p className="flex items-center gap-3">
+                            <TbFlag3 className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Nationality:</span> Bangladeshi</span>
+                        </p>
+                        <p className="flex items-center gap-3">
+                            <FaMapMarkerAlt className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Address:</span> Rangpur, Bangladesh</span>
+                        </p>
+                        <p className="flex items-center gap-3">
+                            <FaPhone className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Phone:</span> +880 1717-107-939</span>
+                        </p>
+                        <p className="flex items-center gap-3">
+                            <FaEnvelope className="text-cyan-400" />
+                            <span><span className="font-semibold text-white">Email:</span>marufhasanlipu@gmail.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default About;

@@ -9,7 +9,7 @@ const skills = [
     description: "Markup language for creating web pages.",
     level: "90%",
     color: "from-orange-500 to-red-500",
-    icon: "/public/image/html.png",
+    icon: "/image/html.png",
   },
   {
     name: "CSS",
@@ -17,31 +17,31 @@ const skills = [
     description: "Style sheet language for beautiful interfaces.",
     level: "85%",
     color: "from-blue-500 to-indigo-500",
-    icon: "/public/image/css.png",
+    icon: "/image/css.png",
   },
   {
-    name: "TailwimdCSS",
+    name: "TailwindCSS",
     category: "Frontend",
-    description: "Style sheet language for beautiful interfaces.",
+    description: "Utility-first CSS framework.",
     level: "85%",
     color: "from-blue-500 to-indigo-500",
-    icon: "/public/image/tailwind.png",
+    icon: "/image/tailwind.png",
   },
   {
     name: "DaisyUi",
     category: "Frontend",
-    description: "Style sheet language for beautiful interfaces.",
+    description: "UI component library for TailwindCSS.",
     level: "85%",
     color: "from-blue-500 to-indigo-500",
-    icon: "/public/image/daisy.png",
+    icon: "/image/daisy.png",
   },
   {
     name: "JavaScript",
     category: "Frontend",
-    description: "Dynamic programming language for web applications.",
+    description: "Dynamic programming language for web apps.",
     level: "80%",
     color: "from-yellow-400 to-orange-400",
-    icon: "/public/image/javascript.png",
+    icon: "/image/javascript.png",
   },
   {
     name: "React",
@@ -49,7 +49,7 @@ const skills = [
     description: "JavaScript library for building UI components.",
     level: "75%",
     color: "from-sky-400 to-blue-600",
-    icon: "/public/image/react.png",
+    icon: "/image/react.png",
   },
   {
     name: "Git",
@@ -57,7 +57,7 @@ const skills = [
     description: "Version control system for tracking code changes.",
     level: "75%",
     color: "from-red-500 to-orange-600",
-    icon: "/public/image/git.png",
+    icon: "/image/git.png",
   },
   {
     name: "Microsoft Word",
@@ -65,7 +65,7 @@ const skills = [
     description: "Professional documentation and formatting.",
     level: "95%",
     color: "from-blue-600 to-sky-400",
-    icon: "/public/image/word.png",
+    icon: "/image/word.png",
   },
   {
     name: "Microsoft Excel",
@@ -73,7 +73,7 @@ const skills = [
     description: "Data organization, analysis, and formulas.",
     level: "85%",
     color: "from-green-500 to-lime-400",
-    icon: "/public/image/excel.png",
+    icon: "/image/excel.png",
   },
   {
     name: "PowerPoint",
@@ -81,7 +81,7 @@ const skills = [
     description: "Presentation design and animations.",
     level: "90%",
     color: "from-orange-400 to-red-400",
-    icon: "/public/image/powerpoint.png",
+    icon: "/image/powerpoint.png",
   },
   {
     name: "Access",
@@ -89,7 +89,7 @@ const skills = [
     description: "Database management and data storage.",
     level: "80%",
     color: "from-purple-500 to-indigo-500",
-    icon: "/public/image/access.jpg",
+    icon: "/image/access.jpg",
   },
   {
     name: "Email Writing",
@@ -97,15 +97,7 @@ const skills = [
     description: "Professional and structured email communication.",
     level: "95%",
     color: "from-pink-400 to-rose-500",
-    icon: "/public/image/gmail.jpg",
-  },
-  {
-    name: "Basic Graphics",
-    category: "Design",
-    description: "Creating simple and attractive visuals.",
-    level: "70%",
-    color: "from-teal-400 to-cyan-500",
-    icon: "/public/image/photoshop.jpg",
+    icon: "/image/gmail.jpg",
   },
   {
     name: "Product Management",
@@ -113,7 +105,7 @@ const skills = [
     description: "Planning, executing, and delivering projects.",
     level: "80%",
     color: "from-yellow-400 to-amber-500",
-    icon: "/public/image/product.jpg",
+    icon: "/image/product.jpg",
   },
 ];
 
@@ -127,6 +119,7 @@ const Skills = () => {
       id="skills"
       className="bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-20 overflow-hidden"
     >
+      {/* Section Title */}
       <div className="text-center mb-12" data-aos="fade-down">
         <h2 className="text-4xl md:text-5xl font-bold text-cyan-400">My Skills</h2>
         <p className="text-gray-300 mt-3 text-lg">
@@ -134,6 +127,7 @@ const Skills = () => {
         </p>
       </div>
 
+      {/* Skills Cards */}
       <div className="relative overflow-hidden mx-auto w-[90%] md:w-[70%]">
         <div className="flex flex-wrap justify-center gap-6" data-aos="fade-up">
           {skills.map((skill, index) => (
@@ -141,8 +135,8 @@ const Skills = () => {
               key={index}
               className="bg-[#1e293b] rounded-2xl p-6 w-64 md:w-72 shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center text-center"
             >
-              {/* 🖼 Logo */}
-              <div className="mb-4 hover:scale-110 transition-transform duration-300">
+              {/* Logo with hover animation */}
+              <div className="mb-4 transform hover:scale-110 transition-transform duration-500">
                 <img
                   src={skill.icon}
                   alt={skill.name}
@@ -162,15 +156,49 @@ const Skills = () => {
               </div>
               <p className="text-sm text-gray-400">{skill.level} Proficiency</p>
             </div>
-            
           ))}
         </div>
-        <div className="border-b-4 mt-10">
+
+        {/* Bottom Border */}
+        <div className="border-b-4 border-cyan-400 mt-10 w-[70%] mx-auto"></div>
+
+        {/* Icon Marquee Animation */}
+        <div className="mt-6 overflow-hidden">
+          <div className="flex animate-marquee gap-6 w-[200%]">
+            {skills.map((skill, index) => (
+              <img
+                key={index}
+                src={skill.icon}
+                alt={skill.name}
+                className="w-12 h-12 object-contain"
+              />
+            ))}
+            {skills.map((skill, index) => (
+              <img
+                key={"dup-" + index}
+                src={skill.icon}
+                alt={skill.name}
+                className="w-12 h-12 object-contain"
+              />
+            ))}
+          </div>
         </div>
       </div>
-  
+
+      {/* Marquee Animation CSS */}
+      <style jsx>{`
+        .animate-marquee {
+          display: flex;
+          gap: 1.5rem;
+          animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </section>
-   
   );
 };
 
