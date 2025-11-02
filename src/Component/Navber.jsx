@@ -102,7 +102,7 @@ function Navbar() {
         </label>
 
     <a 
-  href="/public/Resume/Maruf Hasan Resume - Google Docs.pdf"
+  href="https://drive.google.com/file/d/1urZ2iD2ciZEQyepQ53rf8mODqUU5T0Tm/view?usp=sharing"
   target="_blank" 
   rel="noopener noreferrer" 
   className="..."
