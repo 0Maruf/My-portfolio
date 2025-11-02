@@ -10,28 +10,33 @@ import project3 from "../../public/projectss/Projects (3).png";
 
 // 1. Create a data structure for your projects
 const projectsData = [
-    {
-        image: project2,
-        title: "Restaurent",
-        description: "A sleek and efficient task management application to help users organize their daily to-dos. Features drag-and-drop functionality.",
-        codeLink: "https://github.com/0Maruf/Restaurent_website_Full-Responsive_Final",
-        liveLink: "https://0maruf.github.io/Restaurent_website_Full-Responsive_Final/",
-    },
-    {
-        image: project3,
-        title: "Tea-House",
-        description: "A tool that uses the OpenAI API to generate engaging blog posts based on user prompts. Implemented with Next.js and Tailwind CSS.",
-        codeLink: "https://github.com/0Maruf/tea-house-duisyUI-use-",
-        liveLink: "https://0maruf.github.io/tea-house-duisyUI-use-/",
-    },
-    {
-        image: project1,
-        title: "Personal-Portfolio",
-        description: "A full-stack e-commerce site with features like cart management, user authentication, and payment integration. Built with MERN stack.",
-        codeLink: "https://github.com/0Maruf/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS", // <--- Add your GitHub link here
-        liveLink: "https://0maruf.github.io/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS/", // <--- Add your Live Demo link here
-    },
+  {
+    image: project2,
+    title: "Restaurant",
+    description:
+      "Fully responsive restaurant website featuring menu, booking system, chef profiles, testimonials, and a contact form. Clean UI with smooth navigation across all devices.",
+    codeLink: "https://github.com/0Maruf/Restaurent_website_Full-Responsive_Final",
+    liveLink: "https://0maruf.github.io/Restaurent_website_Full-Responsive_Final/",
+  },
+  {
+    image: project3,
+    title: "Tea House",
+    description:
+      "Fully responsive website showcasing tea products with sections for featured products, menu, client testimonials, news & events, and contact form. Clean and attractive UI with smooth navigation across all devices.",
+    codeLink: "https://github.com/0Maruf/tea-house-duisyUI-use-",
+    liveLink: "https://0maruf.github.io/tea-house-duisyUI-use-/",
+  },
+  {
+    image: project1,
+    title: "Personal Portfolio",
+    description:
+      "Fully responsive personal portfolio featuring sections for About, Skills, Projects, and Contact. Clean, modern UI with smooth navigation and responsive design built using Tailwind CSS.",
+    codeLink: "https://github.com/0Maruf/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS",
+    liveLink: "https://0maruf.github.io/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS/",
+  },
 ];
+
+export default projectsData;
 
 const Projects = () => {
 
