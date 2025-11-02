@@ -43,7 +43,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="bg-black border-b-6 border-white">
+        <div id='projects' className="bg-black border-b-6 border-white">
             <div className="pt-8 text-center">
                 <h2
                     className="text-2xl text-cyan-400 md:text-4xl font-bold p-2"

@@ -9,7 +9,7 @@ import github from "../../public/github.jpg";
 
 const Banner = () => {
   return (
-    <section className="bg-black  text-white py-40 px-6 md:px-16">
+    <section id="home" className="bg-black  text-white py-40 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-16 md:gap-40 ">
 
         {/* About Text */}
