@@ -12,7 +12,7 @@ const About = () => {
     }, []);
 
     return (
-        <section id="about" className="bg-[#0a0a1a] text-white py-20 px-6 md:px-16 relative overflow-hidden">
+        <section id="about" className="bg-[#0a0a1a] text-white py-20 px-6 md:px-16  relative overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around gap-16">
                 {/* Left Side - Image */}
                 <div className="relative flex flex-col items-center" data-aos="fade-right">
@@ -53,16 +53,8 @@ const About = () => {
                             <span><span className="font-semibold text-white">Name:</span> Md. Maruf Hasan</span>
                         </p>
                         <p className="flex items-center gap-3">
-                            <BsCalendarDate className="text-cyan-400" />
-                            <span><span className="font-semibold text-white">Date of Birth:</span> 26-12-2005</span>
-                        </p>
-                        <p className="flex items-center gap-3">
-                            <TbFlag3 className="text-cyan-400" />
-                            <span><span className="font-semibold text-white">Nationality:</span> Bangladeshi</span>
-                        </p>
-                        <p className="flex items-center gap-3">
                             <FaMapMarkerAlt className="text-cyan-400" />
-                            <span><span className="font-semibold text-white">Address:</span> Rangpur, Bangladesh</span>
+                            <span><span className="font-semibold text-white">Address:</span> Dhaka, Bangladesh</span>
                         </p>
                         <p className="flex items-center gap-3">
                             <FaPhone className="text-cyan-400" />
