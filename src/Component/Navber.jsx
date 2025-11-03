@@ -72,7 +72,7 @@ function Navbar() {
 
         {/* Resume Button */}
         <a
-          href="https://drive.google.com/file/d/1urZ2iD2ciZEQyepQ53rf8mODqUU5T0Tm/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Gr9-P9YVdwy9DfIahqUtSJvanf88czB-/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-all"

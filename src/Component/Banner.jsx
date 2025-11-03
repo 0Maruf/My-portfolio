@@ -81,7 +81,7 @@ const Banner = () => {
           </div>
           <div>
             <a
-              href="https://drive.google.com/file/d/1urZ2iD2ciZEQyepQ53rf8mODqUU5T0Tm/view?usp=sharing" // 1. Path to your PDF in the public folder
+              href="https://drive.google.com/file/d/1Gr9-P9YVdwy9DfIahqUtSJvanf88czB-/view?usp=sharing" // 1. Path to your PDF in the public folder
               download="Maruf Hasan Resume - Google Docs.pdf" // 2. This attribute forces the download and sets the default filename
               className="font-semibold text-lg bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition inline-block" // 3. Styling the link to look like a button
             >
