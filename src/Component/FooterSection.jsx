@@ -1,14 +1,28 @@
 // FooterSection.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { FaLaptopCode, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FooterSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900, // faster for smoothness
+      easing: "ease-in-out",
+      once: true,
+      offset: 60,
+    });
+  }, []);
+
   return (
     <footer className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-gray-300 px-6 md:px-16 py-12">
       {/* Top Footer */}
-      <div className="flex flex-col md:flex-row justify-between gap-10 border-b border-gray-700 pb-10">
+      <div
+        className="flex flex-col md:flex-row justify-between gap-10 border-b border-gray-700 pb-10"
+        data-aos="zoom-in"
+      >
         {/* Left Section */}
-        <div className="flex-1 space-y-3">
+        <div className="flex-1 space-y-3" data-aos="zoom-in-right">
           <div className="flex items-center gap-3">
             <FaLaptopCode className="text-4xl text-blue-400" />
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
@@ -24,7 +38,7 @@ const FooterSection = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-500 transition"
+              className="hover:text-blue-500 transition-transform transform hover:scale-110"
             >
               <FaFacebook />
             </a>
@@ -32,7 +46,7 @@ const FooterSection = () => {
               href="https://github.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-400 transition"
+              className="hover:text-gray-400 transition-transform transform hover:scale-110"
             >
               <FaGithub />
             </a>
@@ -40,7 +54,7 @@ const FooterSection = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-400 transition"
+              className="hover:text-blue-400 transition-transform transform hover:scale-110"
             >
               <FaLinkedin />
             </a>
@@ -48,7 +62,7 @@ const FooterSection = () => {
         </div>
 
         {/* Middle Section */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="zoom-in-up">
           <h3 className="text-2xl font-semibold text-cyan-400 mb-4">
             Quick Links
           </h3>
@@ -77,7 +91,10 @@ const FooterSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 bg-[#1e293b]/70 rounded-xl p-6 shadow-lg">
+        <div
+          className="flex-1 bg-[#1e293b]/70 rounded-xl p-6 shadow-lg"
+          data-aos="zoom-in-left"
+        >
           <h3 className="text-2xl font-semibold text-cyan-400 mb-4">
             Stay in Touch
           </h3>
@@ -103,7 +120,7 @@ const FooterSection = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="text-center text-gray-500 text-sm pt-6">
+      <div className="text-center text-gray-500 text-sm pt-6" data-aos="zoom-in">
         © 2025 Md. Maruf Hasan. All Rights Reserved.
       </div>
     </footer>
