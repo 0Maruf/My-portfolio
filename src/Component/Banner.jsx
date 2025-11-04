@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import HeroLogo from "../../public/ResumePicture.png";
+import HeroLogo from "../../public/ResumePicture.jpg";
 import facebook from "../../public/Facebook.png";
 import istagram from "../../public/Instagram.png";
 import linkedin from "../../public/Linkedin.png";
