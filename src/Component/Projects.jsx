@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import project1 from "../../public/projectss/Projects (1).png";
 import project2 from "../../public/projectss/Projects (2).png";
 import project3 from "../../public/projectss/Projects (3).png";
+import support from "../../public/projectss/support.png"
 
 
 export const projectsData = [
@@ -31,6 +32,14 @@ export const projectsData = [
       "Fully responsive personal portfolio featuring sections for About, Skills, Projects, and Contact. Clean, modern UI with smooth navigation and responsive design built using Tailwind CSS.",
     codeLink: "https://github.com/0Maruf/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS",
     liveLink: "https://0maruf.github.io/Personal-portfolio_website_FullyRespposive_Use_TailwindCSS/",
+  },
+  {
+    image: support,
+    title: "Ultimate Support System for Leading Agencies",
+    description:
+      "Fully responsive personal portfolio featuring sections for About, Skills, Projects, and Contact. Clean, modern UI with smooth navigation and responsive design built using Tailwind CSS.",
+    codeLink: "https://github.com/0Maruf/FristReact-Repo-SupportProject-",
+    liveLink: "https://frist-react-repo-support-project.vercel.app/",
   },
 ];
 
