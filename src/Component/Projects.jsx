@@ -29,7 +29,7 @@ export const projectsData = [
     image: support,
     title: "Ultimate Support System for Leading Agencies",
     description:
-      "Fully responsive personal portfolio featuring sections for About, Skills, Projects, and Contact. Clean, modern UI with smooth navigation and responsive design built using Tailwind CSS.",
+      "Fully responsive Ultimate Supporting  featuring sections for About, Help, Premiume ,  Coustomer, and Contact. Clean, modern UI with smooth navigation and responsive design built using Tailwind CSS.",
     codeLink: "https://github.com/0Maruf/FristReact-Repo-SupportProject-",
     liveLink: "https://frist-react-repo-support-project.vercel.app/",
   },
