@@ -18,14 +18,6 @@ export const projectsData = [
     liveLink: "https://0maruf.github.io/Restaurent_website_Full-Responsive_Final/",
   },
   {
-    image: project3,
-    title: "Tea House",
-    description:
-      "Fully responsive website showcasing tea products with sections for featured products, menu, client testimonials, news & events, and contact form. Clean and attractive UI with smooth navigation across all devices.",
-    codeLink: "https://github.com/0Maruf/tea-house-duisyUI-use-",
-    liveLink: "https://0maruf.github.io/tea-house-duisyUI-use-/",
-  },
-  {
     image: project1,
     title: "Personal Portfolio",
     description:
