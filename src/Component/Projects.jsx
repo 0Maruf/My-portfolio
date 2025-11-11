@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 
 import project1 from "../../public/projectss/Projects (1).png";
 import project2 from "../../public/projectss/Projects (2).png";
-import project3 from "../../public/projectss/Projects (3).png";
 import support from "../../public/projectss/support.png"
 
 
