@@ -62,7 +62,7 @@ const FooterSection = () => {
         </div>
 
         {/* Middle Section */}
-        <div className="flex-1" data-aos="zoom-in-up">
+        <div className="flex-1">
           <h3 className="text-2xl font-semibold text-cyan-400 mb-4">
             Quick Links
           </h3>
