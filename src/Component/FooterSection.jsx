@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 const FooterSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 900, // faster for smoothness
+      duration: 900,
       easing: "ease-in-out",
       once: true,
       offset: 60,
@@ -22,7 +22,7 @@ const FooterSection = () => {
         data-aos="zoom-in"
       >
         {/* Left Section */}
-        <div className="flex-1 space-y-3" data-aos="zoom-in-right">
+        <div className="flex-1 space-y-3">
           <div className="flex items-center gap-3">
             <FaLaptopCode className="text-4xl text-blue-400" />
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
