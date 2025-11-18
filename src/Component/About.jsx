@@ -5,6 +5,7 @@ import { FaDownload, FaUser, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-i
 import { BsCalendarDate } from "react-icons/bs";
 import { TbFlag3 } from "react-icons/tb";
 import about from "../../public/image/about.jpg"
+import resume from "../../public/Pdf/Maruf Hasan Resume (1).pdf"
 
 const About = () => {
     useEffect(() => {
@@ -26,7 +27,7 @@ const About = () => {
 
                     <div> <br />
             <a
-              href="../../public/Maruf Hasan Resume.pdf" // 1. Path to your PDF in the public folder
+              href={resume}// 1. Path to your PDF in the public folder
               download="Maruf Hasan Resume - Google Docs.pdf" // 2. This attribute forces the download and sets the default filename
               className="font-semibold text-lg bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition inline-block" // 3. Styling the link to look like a button
             >
