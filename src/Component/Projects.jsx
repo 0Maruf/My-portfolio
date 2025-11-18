@@ -26,7 +26,7 @@ export const projectsData = [
   },
   {
     image: support,
-    title: "Ultimate Support System for Leading Agencies",
+    title: "Ultimate Support",
     description:
       "Fully responsive Ultimate Supporting  featuring sections for About, Help, Premiume ,  Coustomer, and Contact. Clean, modern UI  design ",
     codeLink: "https://github.com/0Maruf/FristReact-Repo-SupportProject-",
