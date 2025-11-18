@@ -1,16 +1,9 @@
 import { useState, useEffect } from "react";
 import { FaLaptopCode } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
-
-  // Initialize AOS animation
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   // Dark mode toggle effect
   useEffect(() => {
@@ -29,7 +22,7 @@ function Navbar() {
         const id = e.target.getAttribute("href").substring(1);
         const section = document.getElementById(id);
         if (section) {
-          const yOffset = -80; // offset for fixed navbar height
+          const yOffset = -80; 
           const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
           setOpen(false);
@@ -42,18 +35,17 @@ function Navbar() {
 
   return (
     <nav
-      data-aos="fade-down"
       className="bg-gray-900 text-white flex justify-between md:justify-around items-center 
-                 py-4 px-4 md:px-8 fixed top-0 w-full z-50 shadow-lg transition-all duration-500 
-                 overflow-x-hidden"
+                 py-4 px-4 md:px-8 fixed top-0 w-full z-50 shadow-lg 
+                 transition-all duration-500 overflow-x-hidden"
     >
-      {/* ---------- Logo ---------- */}
+      {/* Logo */}
       <h1 className="text-2xl font-bold flex items-center gap-2 text-blue-400">
         <FaLaptopCode className="text-3xl text-cyan-400" />
         Maruf <span className="text-white hidden md:inline">Dev</span>
       </h1>
 
-      {/* ---------- Desktop Menu ---------- */}
+      {/* Desktop Menu */}
       <ul className="hidden lg:flex gap-8 font-medium text-lg">
         <li><a href="#home" className="hover:text-cyan-400 transition-all">Home</a></li>
         <li><a href="#about" className="hover:text-cyan-400 transition-all">About</a></li>
@@ -62,10 +54,8 @@ function Navbar() {
         <li><a href="#contact" className="hover:text-cyan-400 transition-all">Contact</a></li>
       </ul>
 
-      {/* ---------- Right Section ---------- */}
+      {/* Right Section */}
       <div className="flex items-center gap-4">
-        {/* Dark Mode Toggle */}
-       
         {/* Resume Button */}
         <a
           href="https://drive.google.com/file/d/1ZjDbEDm3zOXJi-B8tb3yv504PwfNao5w/view?usp=sharing"
@@ -98,10 +88,9 @@ function Navbar() {
         </button>
       </div>
 
-      {/* ---------- Mobile Menu ---------- */}
+      {/* Mobile Menu */}
       {open && (
         <ul
-          data-aos="fade-down"
           className="lg:hidden flex flex-col gap-3 bg-gray-800 mt-2 p-4 rounded shadow-md 
                      absolute top-16 left-0 w-full z-40 overflow-x-hidden"
         >
