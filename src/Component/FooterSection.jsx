@@ -6,6 +6,7 @@ const FooterSection = () => {
     <footer className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-gray-300 px-6 md:px-16 py-12">
 
       {/* Top Footer */}
+      {/* top sec  */}
       <div className="flex flex-col md:flex-row justify-between gap-10 border-b border-gray-700 pb-10">
 
         {/* Left Section */}
