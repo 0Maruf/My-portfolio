@@ -15,13 +15,20 @@ const Education = () => {
       desc: "MERN STACK (Front-End) Developer.",
       aos: "fade-right",
     },
+    (
+      title: "Office Application Intern",
+      institute: "Beacon Teachnical Isltitute",
+      year: "2021",
+      desc: "Completed a 1-month internship program focused on office applications and productivity tools.",
+      aos: "fade-left",
+    ),
     {
       title: "Diploma in Computer Science & Technology",
       institute: "Rangpur Polytechnic Institute",
       board: "Bangladesh Technical Education Board",
       year: "2021 - 2026",
       desc: "Completed major courses on web development, software engineering, and database management.",
-      aos: "fade-left",
+      aos: "fade-right",
     },
     {
       title: "Secondary School Certificate (SSC)",
@@ -29,7 +36,7 @@ const Education = () => {
       board: "Bangladesh Technical Education Board",
       year: "2021",
       desc: "Completed SSC with a strong foundation in Computer science and technology subjects.",
-      aos: "fade-right",
+      aos: "fade-left",
     },
   ];
 
