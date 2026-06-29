@@ -39,9 +39,17 @@ const skills = [
     name: "JavaScript",
     category: "Frontend",
     description: "Dynamic programming language for web apps.",
-    level: "80%",
+    level: "50%",
     color: "from-yellow-400 to-orange-400",
     icon: "/image/javascript.png",
+  },
+  {
+    name: "React",
+    category: "Frontend",
+    description: "JavaScript library for building UI components.",
+    level: "30%",
+    color: "from-sky-400 to-blue-600",
+    icon: "/image/react.png",
   },
   {
     name: "Git",
