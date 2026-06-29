@@ -15,13 +15,13 @@ const Education = () => {
       desc: "MERN STACK (Front-End) Developer.",
       aos: "fade-right",
     },
-    (
+    {
       title: "Office Application Intern",
       institute: "Beacon Teachnical Isltitute",
       year: "2021",
       desc: "Completed a 1-month internship program focused on office applications and productivity tools.",
       aos: "fade-left",
-    ),
+    },
     {
       title: "Diploma in Computer Science & Technology",
       institute: "Rangpur Polytechnic Institute",
