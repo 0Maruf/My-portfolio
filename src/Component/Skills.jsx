@@ -44,14 +44,6 @@ const skills = [
     icon: "/image/javascript.png",
   },
   {
-    name: "React",
-    category: "Frontend",
-    description: "JavaScript library for building UI components.",
-    level: "75%",
-    color: "from-sky-400 to-blue-600",
-    icon: "/image/react.png",
-  },
-  {
     name: "Git",
     category: "Tools",
     description: "Version control system for tracking code changes.",
