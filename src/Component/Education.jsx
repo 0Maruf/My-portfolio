@@ -16,19 +16,19 @@ const Education = () => {
       aos: "fade-right",
     },
     {
-      title: "Office Application Intern",
-      institute: "Beacon Teachnical Isltitute",
-      year: "2021",
-      desc: "Completed a 1-month internship program focused on office applications and productivity tools.",
-      aos: "fade-left",
-    },
-    {
       title: "Diploma in Computer Science & Technology",
       institute: "Rangpur Polytechnic Institute",
       board: "Bangladesh Technical Education Board",
       year: "2021 - 2026",
       desc: "Completed major courses on web development, software engineering, and database management.",
       aos: "fade-right",
+    },
+        {
+      title: "Office Application Intern",
+      institute: "Beacon Teachnical Isltitute",
+      year: "2021",
+      desc: "Completed a 1-month internship program focused on office applications and productivity tools.",
+      aos: "fade-left",
     },
     {
       title: "Secondary School Certificate (SSC)",

@@ -56,7 +56,7 @@ const Banner = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/maruf-hasan9"
               target="_blank"
               rel="noopener noreferrer"
             >

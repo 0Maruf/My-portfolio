@@ -21,7 +21,7 @@ const FooterSection = () => {
 
           <div className="flex gap-4 text-2xl pt-3">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/maruf.hasan.543891/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-blue-500 transition-transform transform hover:scale-110"
@@ -29,7 +29,7 @@ const FooterSection = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/0Maruf"
               target="_blank"
               rel="noreferrer"
               className="hover:text-gray-400 transition-transform transform hover:scale-110"
@@ -37,7 +37,7 @@ const FooterSection = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/maruf-hasan9"
               target="_blank"
               rel="noreferrer"
               className="hover:text-blue-400 transition-transform transform hover:scale-110"
