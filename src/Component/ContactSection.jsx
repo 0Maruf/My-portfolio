@@ -19,7 +19,7 @@ const ContactSection = () => {
         data-aos="zoom-in"
       >
         <h2 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">
-          📬 Get In Touch
+          Get In Touch
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed">
           Feel free to reach out for collaborations, project discussions, or even just a friendly hello!
@@ -42,7 +42,7 @@ const ContactSection = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-6 pt-4 text-3xl">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/lipumarufhasan"
               target="_blank"
               rel="noreferrer"
               className="text-gray-300 hover:text-blue-500 transition-transform transform hover:scale-125 duration-300"
@@ -51,7 +51,7 @@ const ContactSection = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/0Maruf"
               target="_blank"
               rel="noreferrer"
               className="text-gray-300 hover:text-gray-400 transition-transform transform hover:scale-125 duration-300"
@@ -60,7 +60,7 @@ const ContactSection = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/maruf-hasan9"
               target="_blank"
               rel="noreferrer"
               className="text-gray-300 hover:text-blue-400 transition-transform transform hover:scale-125 duration-300"
@@ -82,15 +82,15 @@ const ContactSection = () => {
 
           <div className="space-y-4 text-gray-200 text-lg">
             <p>
-              <span className="font-semibold text-white">📍 Location:</span>{" "}
+              <span className="font-semibold text-white">Location:</span>{" "}
               Rangpur, Bangladesh
             </p>
             <p>
-              <span className="font-semibold text-white">📞 Phone:</span>{" "}
+              <span className="font-semibold text-white">Phone:</span>{" "}
               01717107939
             </p>
             <p>
-              <span className="font-semibold text-white">✉️ Email:</span>{" "}
+              <span className="font-semibold text-white">Email:</span>{" "}
               marufhasanlipu@gmail.com
             </p>
           </div>

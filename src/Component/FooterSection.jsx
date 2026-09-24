@@ -76,7 +76,7 @@ const FooterSection = () => {
               type="submit"
               className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
             >
-              Send Message 🚀
+              Send Message 
             </button>
           </form>
         </div>
@@ -84,7 +84,7 @@ const FooterSection = () => {
 
       {/* Bottom Footer */}
       <div className="text-center text-gray-500 text-sm pt-6">
-        © 2025 Md. Maruf Hasan. All Rights Reserved.
+        © 2026 Md. Maruf Hasan. All Rights Reserved.
       </div>
     </footer>
   );
