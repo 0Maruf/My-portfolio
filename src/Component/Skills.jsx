@@ -59,6 +59,14 @@ const skills = [
     color: "from-red-500 to-orange-600",
     icon: "/image/git.png",
   },
+  {
+    name: "Shopify",
+    category: "Tools",
+    description: "E-commarce platform for online stores and retail point-of-sale systems.",
+    level: "75%",
+    color: "from-red-500 to-orange-600",
+    icon: "/image/shopify.png",
+  },
  
 ];
 
