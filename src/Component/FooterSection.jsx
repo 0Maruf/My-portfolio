@@ -21,7 +21,7 @@ const FooterSection = () => {
 
           <div className="flex gap-4 text-2xl pt-3">
             <a
-              href="https://www.facebook.com/maruf.hasan.543891/"
+              href="https://www.facebook.com/lipumarufhasan"
               target="_blank"
               rel="noreferrer"
               className="hover:text-blue-500 transition-transform transform hover:scale-110"
